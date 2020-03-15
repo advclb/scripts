@@ -1,0 +1,46 @@
+{
+  "name": "@advclb/foobar",
+  "version": "1.0.0",
+  "description": "Foobar library",
+  "main": "dist/foobar.umd.js",
+  "module": "src/index.js",
+  "scripts": {
+    "start": "npm run doc:start",
+    "test": "jest",
+    "build": "webpack --mode=production",
+    "deploy": "npm run doc:deploy",
+    "lint": "eslint src/**/*.js && stylelint src/**/*.css",
+    "format": "prettier --write src/**",
+    "doc:build": "webpack --mode=production --config=doc/webpack.config.js",
+    "doc:start": "webpack-dev-server --mode=development --config=doc/webpack.config.js",
+    "doc:deploy": "gh-pages -d doc/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advclb/foobar.git"
+  },
+  "author": "Guo Yunhe",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/advclb/foobar/issues"
+  },
+  "homepage": "https://github.com/advclb/foobar#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "latest",
+    "css-loader": "latest",
+    "eslint": "latest",
+    "eslint-config-advclb": "latest",
+    "gh-pages": "latest",
+    "html-webpack-plugin": "latest",
+    "jest": "latest",
+    "prettier": "latest",
+    "sass": "latest",
+    "sass-loader": "latest",
+    "style-loader": "latest",
+    "stylelint": "latest",
+    "stylelint-config-advclb": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
