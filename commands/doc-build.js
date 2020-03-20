@@ -1,6 +1,6 @@
-const getPaths = require("../include/get-paths");
+const getPaths = require("../includes/get-paths");
 const Webpack = require("webpack");
-const generateConfig = require("../include/webpack.config");
+const generateConfig = require("../includes/webpack.config");
 
 module.exports = function() {
   const paths = getPaths(true);

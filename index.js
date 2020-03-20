@@ -8,7 +8,6 @@ const libBuild = require("./commands/lib-build");
 
 const program = new Command();
 program.version(packageJSON.version);
-console.log(packageJSON.name + " " + packageJSON.version);
 
 program
   .command("doc:start")

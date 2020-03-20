@@ -38,6 +38,7 @@ module.exports = function({ type, paths, library, hot }) {
     mode: hot ? "development" : "production",
     entry: paths.entry,
     output,
+    devtool: "source-map",
     module: {
       rules: [
         {
