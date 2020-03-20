@@ -10,41 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
-### Added
-
-### Changed
-
-### Deprecated
-
-### Fixed
-
-### Removed
-
-## [1.0.0] - 2019-10-21
+## [0.1.0] - 2020-03-20
 
 ### Added
 
-- Some new feature
+- doc:start script
+- doc:build script
+- lib:build script
 
-### Changed
-
-- Some behavior
-- **BREAKING CHANGE**: means you need to increase major version
-
-### Deprecated
-
-- Something still support but not recommend
-
-### Fixed
-
-- Some bug
-
-### Removed
-
-- Something not wanted
-
-## [0.0.1] - 2019-10-20
-
-[unreleased]: https://github.com/advclb/foobar/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/advclb/foobar/compare/v0.3.0...v1.0.0
-[0.0.1]: https://github.com/advclb/foobar/releases/tag/v0.0.1
+[unreleased]: https://github.com/advclb/scripts/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/advclb/scripts/releases/tag/v0.1.0
