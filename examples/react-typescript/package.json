@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "../../index.js doc:start",
+    "build": "../../index.js lib:build && ../../index.js doc:build"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
+  }
+}

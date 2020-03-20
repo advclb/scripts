@@ -1,9 +1,8 @@
 {
-  "name": "@advclb/foobar",
+  "name": "@advclb/scripts",
   "version": "1.0.0",
-  "description": "Foobar library",
-  "main": "dist/foobar.umd.js",
-  "module": "src/index.js",
+  "description": "Adventure Club front-end build scripts",
+  "main": "src/index.js",
   "scripts": {
     "start": "npm run doc:start",
     "test": "jest",
@@ -25,22 +24,23 @@
     "url": "https://github.com/advclb/foobar/issues"
   },
   "homepage": "https://github.com/advclb/foobar#readme",
-  "devDependencies": {
+  "dependencies": {
     "clean-webpack-plugin": "latest",
+    "commander": "latest",
     "css-loader": "latest",
-    "eslint": "latest",
-    "eslint-config-advclb": "latest",
-    "gh-pages": "latest",
     "html-webpack-plugin": "latest",
-    "jest": "latest",
-    "prettier": "latest",
+    "postcss-loader": "latest",
     "sass": "latest",
     "sass-loader": "latest",
     "style-loader": "latest",
-    "stylelint": "latest",
-    "stylelint-config-advclb": "latest",
+    "ts-loader": "latest",
     "webpack": "latest",
-    "webpack-cli": "latest",
     "webpack-dev-server": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-advclb": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
   }
 }
