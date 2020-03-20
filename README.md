@@ -1,11 +1,14 @@
-# Foobar
+# AC Scripts
 
-## Installation
+```
+npm i -D @advclb/scripts
+```
 
-## API Reference
-
-## Examples
-
-## Copyright
-
-## License
+```json
+{
+  "scripts": {
+    "start": "ac doc:start",
+    "build": "ac doc:build && ac lib:build"
+  }
+}
+```
