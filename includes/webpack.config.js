@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const PeerDepsExternalsPlugin = require("peer-deps-externals-webpack-plugin");
 
 const cssLoaders = [
   "style-loader",
@@ -23,6 +24,7 @@ module.exports = function({ type, paths, library, hot }) {
     output.filename = "index.js";
     output.library = library;
     output.libraryTarget = "umd";
+    plugins.push(new PeerDepsExternalsPlugin());
   } else {
     plugins.push(
       new HtmlWebpackPlugin({

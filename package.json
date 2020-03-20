@@ -36,6 +36,7 @@
     "commander": "latest",
     "css-loader": "latest",
     "html-webpack-plugin": "latest",
+    "peer-deps-externals-webpack-plugin": "latest",
     "postcss-loader": "latest",
     "sass": "latest",
     "sass-loader": "latest",
