@@ -16,13 +16,12 @@ const cssLoaders = [
 ];
 const sassLoaders = [...cssLoaders, "sass-loader"];
 
-module.exports = function({ type, paths, library, hot }) {
+module.exports = function({ type, paths, hot }) {
   const output = { path: paths.dist };
   const plugins = [new webpack.ProgressPlugin(), new CleanWebpackPlugin()];
 
   if (type === "lib") {
     output.filename = "index.js";
-    output.library = library;
     output.libraryTarget = "umd";
     plugins.push(new PeerDepsExternalsPlugin());
   } else {

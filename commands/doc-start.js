@@ -4,7 +4,7 @@ const WebpackDevServer = require("webpack-dev-server");
 const generateConfig = require("../includes/webpack.config");
 
 module.exports = function() {
-  const paths = getPaths(true);
+  const paths = getPaths("doc");
   const config = generateConfig({ paths, hot: true });
   const compiler = Webpack(config);
   const port = 8080;

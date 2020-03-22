@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/advclb/foobar#readme",
   "dependencies": {
+    "autoprefixer": "latest",
     "clean-webpack-plugin": "latest",
     "commander": "latest",
     "css-loader": "latest",
