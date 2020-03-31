@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "start": "../../index.js doc:start",
-    "build": "../../index.js lib:build && ../../index.js doc:build"
+    "build": "../../index.js lib:build && ../../index.js doc:build",
+    "lint": "../../index.js lint"
   },
   "devDependencies": {
     "@types/react": "^16.9.25",

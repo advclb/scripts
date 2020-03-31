@@ -5,6 +5,7 @@ const packageJSON = require("./package.json");
 const docStart = require("./commands/doc-start");
 const docBuild = require("./commands/doc-build");
 const libBuild = require("./commands/lib-build");
+const lint = require("./commands/lint");
 
 const program = new Command();
 program.version(packageJSON.version);
@@ -23,5 +24,10 @@ program
   .command("lib:build")
   .description("build library")
   .action(libBuild);
+
+program
+  .command("lint")
+  .description("format and lint code")
+  .action(lint);
 
 program.parse(process.argv);

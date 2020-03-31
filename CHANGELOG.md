@@ -13,6 +13,7 @@ section when releasing.
 ### Added
 
 - lib:build compile typescripts into lib directory
+- lint script
 
 ## [0.2.1] - 2020-03-21
 
