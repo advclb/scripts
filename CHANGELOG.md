@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+### Added
+
+- lib:build compile typescripts into lib directory
+
 ## [0.2.1] - 2020-03-21
 
 ### Fixed

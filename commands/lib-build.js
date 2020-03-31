@@ -1,9 +1,16 @@
-const getPaths = require("../includes/get-paths");
 const Webpack = require("webpack");
+
+const exec = require("../includes/exec");
+const getPaths = require("../includes/get-paths");
 const generateConfig = require("../includes/webpack.config");
 
 module.exports = function() {
   const paths = getPaths();
+  if (paths.entry.endsWith(".ts") || paths.entry.endsWith(".tsx")) {
+    exec(
+      "tsc --project tsconfig.json --declaration --outDir lib && cp src/*css lib"
+    );
+  }
   const config = generateConfig({
     paths,
     type: "lib"
