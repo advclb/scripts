@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+## [0.3.1] - 2020-04-07
+
+### Changed
+
+- lint command fix files in root dir
+
 ## [0.3.0] - 2020-04-07
 
 ### Added
@@ -37,7 +43,8 @@ section when releasing.
 - doc:build command
 - lib:build command
 
-[unreleased]: https://github.com/advclb/scripts/compare/v0.3.0...HEAD
+[unreleased]: https://github.com/advclb/scripts/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/advclb/scripts/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/advclb/scripts/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/advclb/scripts/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/advclb/scripts/compare/v0.1.0...v0.2.0
