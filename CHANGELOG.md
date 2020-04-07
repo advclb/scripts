@@ -10,10 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+## [0.3.0] - 2020-04-07
+
 ### Added
 
-- lib:build compile typescripts into lib directory
-- lint script
+- lib:build command compile typescripts
+- lint command
 
 ## [0.2.1] - 2020-03-21
 
@@ -31,11 +33,12 @@ section when releasing.
 
 ### Added
 
-- doc:start script
-- doc:build script
-- lib:build script
+- doc:start command
+- doc:build command
+- lib:build command
 
-[unreleased]: https://github.com/advclb/scripts/compare/v0.2.1...HEAD
+[unreleased]: https://github.com/advclb/scripts/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/advclb/scripts/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/advclb/scripts/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/advclb/scripts/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/advclb/scripts/releases/tag/v0.1.0
