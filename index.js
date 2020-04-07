@@ -20,14 +20,8 @@ program
   .description("build document site")
   .action(docBuild);
 
-program
-  .command("lib:build")
-  .description("build library")
-  .action(libBuild);
+program.command("lib:build").description("build library").action(libBuild);
 
-program
-  .command("lint")
-  .description("format and lint code")
-  .action(lint);
+program.command("lint").description("format and lint code").action(lint);
 
 program.parse(process.argv);

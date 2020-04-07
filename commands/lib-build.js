@@ -4,7 +4,7 @@ const exec = require("../includes/exec");
 const getPaths = require("../includes/get-paths");
 const generateConfig = require("../includes/webpack.config");
 
-module.exports = function() {
+module.exports = function () {
   const paths = getPaths();
   if (paths.entry.endsWith(".ts") || paths.entry.endsWith(".tsx")) {
     exec(
@@ -13,7 +13,7 @@ module.exports = function() {
   }
   const config = generateConfig({
     paths,
-    type: "lib"
+    type: "lib",
   });
   const compiler = Webpack(config);
   compiler.run((err, stats) => {

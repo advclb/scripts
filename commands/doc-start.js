@@ -3,7 +3,7 @@ const Webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
 const generateConfig = require("../includes/webpack.config");
 
-module.exports = function() {
+module.exports = function () {
   const paths = getPaths("doc");
   const config = generateConfig({ paths, hot: true });
   const compiler = Webpack(config);
@@ -11,11 +11,11 @@ module.exports = function() {
   const devServerOptions = {
     open: true,
     stats: {
-      colors: true
+      colors: true,
     },
     contentBase: paths.dist,
     compress: true,
-    port
+    port,
   };
   const server = new WebpackDevServer(compiler, devServerOptions);
 

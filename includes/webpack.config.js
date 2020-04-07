@@ -10,13 +10,13 @@ const cssLoaders = [
   {
     loader: "postcss-loader",
     options: {
-      config: { path: path.join(__dirname, "postcss.config.js") }
-    }
-  }
+      config: { path: path.join(__dirname, "postcss.config.js") },
+    },
+  },
 ];
 const sassLoaders = [...cssLoaders, "sass-loader"];
 
-module.exports = function({ type, paths, hot }) {
+module.exports = function ({ type, paths, hot }) {
   const output = { path: paths.dist };
   const plugins = [new webpack.ProgressPlugin(), new CleanWebpackPlugin()];
 
@@ -27,7 +27,7 @@ module.exports = function({ type, paths, hot }) {
   } else {
     plugins.push(
       new HtmlWebpackPlugin({
-        template: paths.template
+        template: paths.template,
       })
     );
     if (hot) {
@@ -44,22 +44,22 @@ module.exports = function({ type, paths, hot }) {
       rules: [
         {
           test: /\.css$/,
-          use: cssLoaders
+          use: cssLoaders,
         },
         {
           test: /\.s[ac]ss$/,
-          use: sassLoaders
+          use: sassLoaders,
         },
         {
           test: /\.tsx?$/,
           use: "ts-loader",
-          exclude: /node_modules/
-        }
-      ]
+          exclude: /node_modules/,
+        },
+      ],
     },
     resolve: {
-      extensions: [".js", ".jsx", ".ts", ".tsx"]
+      extensions: [".js", ".jsx", ".ts", ".tsx"],
     },
-    plugins
+    plugins,
   };
 };

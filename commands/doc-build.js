@@ -2,7 +2,7 @@ const getPaths = require("../includes/get-paths");
 const Webpack = require("webpack");
 const generateConfig = require("../includes/webpack.config");
 
-module.exports = function() {
+module.exports = function () {
   const paths = getPaths("doc");
   const config = generateConfig({ paths });
   const compiler = Webpack(config);

@@ -20,7 +20,7 @@ function getEntry(src) {
   }
 }
 
-module.exports = function(prefix) {
+module.exports = function (prefix) {
   const root = prefix ? path.join(process.cwd(), prefix) : process.cwd();
   const src = path.join(root, "src");
   const dist = path.join(root, "dist");
@@ -31,6 +31,6 @@ module.exports = function(prefix) {
     src,
     dist,
     template,
-    entry
+    entry,
   };
 };

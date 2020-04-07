@@ -1,7 +1,7 @@
 {
   "name": "@advclb/scripts",
   "version": "0.3.1",
-  "description": "Adventure Club front-end build scripts",
+  "description": "front-end build scripts",
   "main": "index.js",
   "bin": {
     "ac": "index.js"
@@ -11,26 +11,22 @@
     "includes"
   ],
   "scripts": {
-    "start": "npm run doc:start",
-    "test": "jest",
-    "build": "webpack --mode=production",
-    "deploy": "npm run doc:deploy",
-    "lint": "eslint src/**/*.js && stylelint src/**/*.css",
-    "format": "prettier --write src/**",
-    "doc:build": "webpack --mode=production --config=doc/webpack.config.js",
-    "doc:start": "webpack-dev-server --mode=development --config=doc/webpack.config.js",
-    "doc:deploy": "gh-pages -d doc/dist"
+    "lint": "eslint --fix --debug ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/advclb/foobar.git"
+    "url": "git+https://github.com/advclb/scripts.git"
   },
-  "author": "Guo Yunhe",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me",
+    "url": "https://guoyunhe.me/"
+  },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/advclb/foobar/issues"
+    "url": "https://github.com/advclb/scripts/issues"
   },
-  "homepage": "https://github.com/advclb/foobar#readme",
+  "homepage": "https://github.com/advclb/scripts#readme",
   "dependencies": {
     "autoprefixer": "latest",
     "clean-webpack-plugin": "latest",
