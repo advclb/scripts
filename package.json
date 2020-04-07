@@ -1,6 +1,6 @@
 {
   "name": "@advclb/scripts",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Adventure Club front-end build scripts",
   "main": "index.js",
   "bin": {
