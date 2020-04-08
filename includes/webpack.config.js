@@ -4,17 +4,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const PeerDepsExternalsPlugin = require("peer-deps-externals-webpack-plugin");
 
-const cssLoaders = [
-  "style-loader",
-  { loader: "css-loader", options: { importLoaders: 1 } },
-  {
-    loader: "postcss-loader",
-    options: {
-      config: { path: path.join(__dirname, "postcss.config.js") },
-    },
+const cssLoader = { loader: "css-loader", options: { importLoaders: 1 } };
+const postCssLoader = {
+  loader: "postcss-loader",
+  options: {
+    config: { path: path.join(__dirname, "postcss.config.js") },
   },
-];
-const sassLoaders = [...cssLoaders, "sass-loader"];
+};
 
 module.exports = function ({ type, paths, hot }) {
   const output = { path: paths.dist };
@@ -45,12 +41,22 @@ module.exports = function ({ type, paths, hot }) {
         // Angular
         {
           test: /\.component\.ts$/,
-          loaders: ["ts-loader", "angular2-template-loader?keepUrl=true"],
+          use: ["ts-loader", "angular2-template-loader?keepUrl=true"],
         },
-        // Angular
+        // Angular Template
         {
-          test: /\.component\.(html|css)$/,
-          loader: "raw-loader",
+          test: /\.component\.html$/,
+          use: "raw-loader",
+        },
+        // Angular CSS
+        {
+          test: /\.component\.css$/,
+          use: ["raw-loader", postCssLoader],
+        },
+        // Angular SaSS
+        {
+          test: /\.component\.s[ac]ss$/,
+          use: ["raw-loader", postCssLoader, "sass-loader"],
         },
         {
           test: /\.tsx?$/,
@@ -59,11 +65,13 @@ module.exports = function ({ type, paths, hot }) {
         },
         {
           test: /\.css$/,
-          use: cssLoaders,
+          use: ["style-loader", cssLoader, postCssLoader],
+          exclude: /\.component\.css$/,
         },
         {
           test: /\.s[ac]ss$/,
-          use: sassLoaders,
+          use: ["style-loader", cssLoader, postCssLoader, "sass-loader"],
+          exclude: /\.component\.s[ac]ss$/,
         },
       ],
     },
