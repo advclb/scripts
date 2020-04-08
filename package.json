@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/advclb/scripts#readme",
   "dependencies": {
+    "angular2-template-loader": "latest",
     "autoprefixer": "latest",
     "clean-webpack-plugin": "latest",
     "commander": "latest",
@@ -35,6 +36,7 @@
     "html-webpack-plugin": "latest",
     "peer-deps-externals-webpack-plugin": "latest",
     "postcss-loader": "latest",
+    "raw-loader": "latest",
     "sass": "latest",
     "sass-loader": "latest",
     "style-loader": "latest",
@@ -43,9 +45,14 @@
     "webpack-dev-server": "latest"
   },
   "devDependencies": {
+    "@angular/core": "latest",
+    "@types/react": "latest",
     "eslint": "latest",
     "eslint-config-advclb": "latest",
     "prettier": "latest",
-    "typescript": "latest"
+    "react": "latest",
+    "typescript": "latest",
+    "vue": "latest",
+    "zone.js": "latest"
   }
 }

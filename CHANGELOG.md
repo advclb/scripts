@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+### Added
+
+- webpack angular support
+
 ## [0.3.1] - 2020-04-07
 
 ### Changed

@@ -42,6 +42,21 @@ module.exports = function ({ type, paths, hot }) {
     devtool: "source-map",
     module: {
       rules: [
+        // Angular
+        {
+          test: /\.component.ts$/,
+          loaders: ["ts-loader", "angular2-template-loader?keepUrl=true"],
+        },
+        // Angular
+        {
+          test: /\.component.(html|css)$/,
+          loader: "raw-loader",
+        },
+        {
+          test: /\.tsx?$/,
+          use: "ts-loader",
+          exclude: /node_modules/,
+        },
         {
           test: /\.css$/,
           use: cssLoaders,
@@ -49,11 +64,6 @@ module.exports = function ({ type, paths, hot }) {
         {
           test: /\.s[ac]ss$/,
           use: sassLoaders,
-        },
-        {
-          test: /\.tsx?$/,
-          use: "ts-loader",
-          exclude: /node_modules/,
         },
       ],
     },
