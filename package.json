@@ -1,6 +1,6 @@
 {
   "name": "@advclb/scripts",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "front-end build scripts",
   "main": "index.js",
   "bin": {
