@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+## [0.5.1] - 2020-04-10
+
 ### Fixed
 
 - stylelint file path
@@ -59,7 +61,8 @@ section when releasing.
 - doc:build command
 - lib:build command
 
-[unreleased]: https://github.com/advclb/scripts/compare/v0.5.0...HEAD
+[unreleased]: https://github.com/advclb/scripts/compare/v0.5.1...HEAD
+[0.5.1]: https://github.com/advclb/scripts/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/advclb/scripts/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/advclb/scripts/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/advclb/scripts/compare/v0.3.0...v0.3.1
