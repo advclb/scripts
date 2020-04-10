@@ -10,6 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+### Fixed
+
+- doc:start: redirect
+
+### Removed
+
+- lint command
+
 ## [0.5.1] - 2020-04-10
 
 ### Fixed

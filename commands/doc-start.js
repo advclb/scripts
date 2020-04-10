@@ -8,18 +8,22 @@ module.exports = function () {
   const config = generateConfig({ paths, hot: true });
   const compiler = Webpack(config);
   const port = 8080;
+  const host = "127.0.0.1";
   const devServerOptions = {
+    host,
+    port,
     open: true,
+    hot: true,
     stats: {
       colors: true,
     },
     contentBase: paths.dist,
     compress: true,
-    port,
+    historyApiFallback: true,
   };
   const server = new WebpackDevServer(compiler, devServerOptions);
 
-  server.listen(port, "127.0.0.1", () => {
+  server.listen(port, host, () => {
     console.log("Starting server on http://localhost:8080");
   });
 };
