@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "../../index.js doc:start",
+    "start": "../../index.js doc:start --port 1000",
     "build": "../../index.js lib:build && ../../index.js doc:build",
     "lint": "../../index.js lint"
   },

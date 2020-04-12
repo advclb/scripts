@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+### Added
+
+- doc:start: add port option
+
 ## [0.6.0] - 2020-04-10
 
 ### Fixed

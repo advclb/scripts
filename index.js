@@ -12,6 +12,7 @@ program.version(packageJSON.version);
 program
   .command("doc:start")
   .description("start document development server")
+  .option("-p, --port <number>", "server port number [8080]")
   .action(docStart);
 
 program
