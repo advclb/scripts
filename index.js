@@ -5,6 +5,7 @@ const packageJSON = require("./package.json");
 const docStart = require("./commands/doc-start");
 const docBuild = require("./commands/doc-build");
 const libBuild = require("./commands/lib-build");
+const icon = require("./commands/icon");
 
 const program = new Command();
 program.version(packageJSON.version);
@@ -21,5 +22,10 @@ program
   .action(docBuild);
 
 program.command("lib:build").description("build library").action(libBuild);
+
+program
+  .command("icon [dirs...]")
+  .description("compile svg icons into path data json")
+  .action(icon);
 
 program.parse(process.argv);

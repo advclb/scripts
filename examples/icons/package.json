@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "cp test.svg.in test.svg && ../../index.js icon"
+  }
+}

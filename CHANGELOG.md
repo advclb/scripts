@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Add things here whenever you change something notable. Move them to a version
 section when releasing.
 
+## [0.8.0] - 2020-04-30
+
+### Added
+
+- icon command
+
 ## [0.7.0] - 2020-04-10
 
 ### Added
@@ -77,7 +83,8 @@ section when releasing.
 - doc:build command
 - lib:build command
 
-[unreleased]: https://github.com/advclb/scripts/compare/v0.7.0...HEAD
+[unreleased]: https://github.com/advclb/scripts/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/advclb/scripts/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/advclb/scripts/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/advclb/scripts/compare/v0.5.1...v0.6.0
 [0.5.1]: https://github.com/advclb/scripts/compare/v0.5.0...v0.5.1
